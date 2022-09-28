@@ -28,6 +28,12 @@ header {
     z-index: 10;
 }
 
+.topNav p {
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+}
+
 .navbarLogo {
     width: 82px;
     height: 82px;
@@ -138,28 +144,23 @@ header {
     border-bottom: 10px solid #982623;
 }
 
-/* .mainBanner.visible {
-    margin: 0;
-    height: 250px;
-} */
-
 .titleContainer {
     background-color: #0c385a;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 20PX;
     width: auto;
 }
 
 .titleContainer h1 {
     margin: 0;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .titleContainer h2 {
-    font-size: 20px;
+    font-size: 15px;
     margin: 0;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .bodyContainer {
@@ -169,4 +170,5 @@ header {
 
 .bodyContainer div {
     height: 1500px;
+    background-color: RGBA(118, 197, 220, 0.4);
 }
