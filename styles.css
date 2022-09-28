@@ -132,7 +132,7 @@ header {
 .mainBanner {
     margin-top: 90px;
     height: 210px;
-    background-image: url(/images/footballField.JPG);
+    background-image: url(./images/footballField.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 10px solid #982623;
