@@ -1,0 +1,172 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/*** NAVBAR ***/
+
+header {
+    margin: 0;
+
+}
+
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 0 0;
+    border-bottom: 1px solid #0c385a;
+    box-shadow: 0px 5px 10px #0c385a;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    transition: top 0.5s;
+    z-index: 10;
+}
+
+.navbarLogo {
+    width: 82px;
+    height: 82px;
+    align-self: center;
+    padding-left: 5px;
+}
+
+.navMenu {
+    height: 0;
+    transition: all 0.7s ease;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: #0c385a;
+}
+
+.navMenu.visible {
+    height: 80px;
+    width: 100%;
+    background-color: #0c385a;
+    transition: all 0.7s ease;
+    position: fixed;
+    z-index: 1;
+}
+
+.navMenu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 0;
+    margin: 0;
+    overflow-y: hidden;
+    transition: all 0.5s ease;
+}
+
+.navMenu.visible ul {
+    display: flex;
+    padding: 0 10px;
+    height: 80px;
+    transition: all 1s ease;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navMenu ul li {
+    padding: 0 10px;
+    list-style-type: none;
+    color: white;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    justify-content: space-around;
+}
+
+.navMenu.visible ul li {
+    padding: 0 10px;
+    list-style-type: none;
+    color: white;
+    font-size: 15px;
+    transition: all 1s ease;
+    justify-content: space-around;
+}
+
+.navMenu ul button {
+    background-color: #982623;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+.navMenu.visible ul button {
+    background-color: #982623;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 15px;
+    transition: all 1s ease;
+}
+
+.burgerMenu {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    -webkit-animation: rotate 10s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*** BODY ***/
+
+.mainBanner {
+    margin-top: 90px;
+    height: 210px;
+    background-image: url(/images/footballField.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid #982623;
+}
+
+/* .mainBanner.visible {
+    margin: 0;
+    height: 250px;
+} */
+
+.titleContainer {
+    background-color: #0c385a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: auto;
+}
+
+.titleContainer h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.titleContainer h2 {
+    font-size: 20px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.bodyContainer {
+    border: 10px solid #76c5dc;
+    opacity: 50%;
+}
+
+.bodyContainer div {
+    height: 1500px;
+}
